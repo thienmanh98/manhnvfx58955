@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+html {
+  font-size : 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size : 1.5rem;
+}
+
+/* Long chu vao anh */
+.img-banner {
+  position: relative;
+  text-align: center;
+  color: #f7f7f7;
+  /* dius: 50px; */
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+img[loading: "lazy"] {
+  loading: lazy;
+}
+.avatar {
+  max-width: 100%;
+  width: 195px;
+  height: 210px;
+  border: 5px solid #f7f7f7;
+  border-radius: 50%;
+  position: absolute;
+  top: -120px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-title {
+  padding-left: 15px;
+}
+
+/* Phan thong tin */
+
+section > .container {
+  margin: auto;
+  display: block;
+  padding: 30px 10px;
+  line-height: 25px;
+}
+.container a {
+  text-decoration: none;
+}
+
+.bg-grey {
+  padding: 15px 15px 0 15px;
+}
+
+/* NAV-BAR */
+#nav-bar .container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 30px;
+  text-transform: uppercase;
+  position: relative;
+  /* border: 2px solid #ccc; */
+  /* overflow: hidden; */
+}
+.container nav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.start {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 4px;
+  padding-right: 300px;
+}
+.start:hover {
+  transform: translateY(-3px);
+}
+a {
+  color: black;
+  border-left: 1.5px solid #ccc;
+  border-right: 1.5px solid #ccc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 4px;
+  border-radius: 8px;
+}
+:root {
+  --secondary-color: #f36c1e;
+}
+a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #f71010;
+  color: var(--secondary-color);
+}
+
+i {
+  display: inline;
+  color: rgb(111, 156, 199);
+}
+.icons {
+  margin-top: 10px;
+}
+
+.bg-grey {
+  background-color: #f7f7f7;
+}
+
+/* MUC TIEU NGHE NGHIEP - THONG TIN CA NHAN*/
+#about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0;
+  padding-left: 80px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+#personal-info {
+  padding-left: 120px;
+  border-left: 1px solid #ccc;
+}
+.mt-40-info {
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+h5 {
+  font-size: 18px;
+}
+.info li {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+ul {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.info span {
+  font-weight: bold;
+}
+/* .cham-xanh {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #007bff;
+  margin-right: 8px;
+  border-radius: 50px; 
+}*/
+
+.job-title {
+  display: flex;
+  align-items: center;
+}
+/* 3cot - 2hang */
+#job-info .container {
+  display: grid;
+  width: 96%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  text-align: center;
+  gap: 10px;
+}
+.grid i {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.grid-2 i {
+  padding: 20px;
+  font-size: 20px;
+  border: 2px solid rgb(111, 156, 199);
+  border-radius: 50%;
+}
+.grid-2 p {
+  color: black;
+}
+
+.border-1 {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  /* transition: box-shadow 0.3s; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.border-1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.border-1 h4 {
+  margin-top: 20px;
+}
+.timeline {
+  font-style: italic;
+}
+
+.timeline span {
+  background-color: rgb(111, 156, 199);
+  color: #f7f7f7;
+  border: 5px solid rgb(111, 156, 199);
+  border-radius: 30%;
+}
+.dot-list {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.dot-list li {
+  position: relative;
+  padding-left: 15px;
+  /* list-style-type: none; */
+}
+.dot-list li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(125, 125, 226);
+  border-radius: 100%;
+}
+
+/* THANH BANG DIEM */
+.score-blue {
+  background: #199cbd;
+  display: inline-block;
+  height: 5px;
+  width: 45px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.score-grey {
+  background: #8c8e8f;
+  display: inline-block;
+  height: 5px;
+  width: 45px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+/* DU AN */
+.border-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  border-bottom: 1px solid black;
+}
+.border-xanh {
+  background-color: rgb(111, 156, 199);
+  color: #f7f7f7;
+  border: 2px solid rgb(111, 156, 199);
+  border-radius: 30%;
+}
+
+.border-top i {
+  font-size: 16px;
+  color: #555;
+  padding-bottom: 13px;
+}
+
+.du-an-border {
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.du-an-img {
+  width: 90%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.du-an-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.du-an-grid-cuoi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  border-bottom: none;
+}
+.project-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.du-an-border {
+  flex: 1;
+  min-width: 280px;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.du-an-border:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* CHUNG CHI - GIAI THUONG */
+.chung-chi-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0;
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+}
+.chung-chi-list > div {
+  /* border: 1px solid #ccc; */
+  padding: 20px;
+  margin-top: 15px;
+}
+.chung-chi-list img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.chung-chi-1,
+.chung-chi-2,
+.chung-chi-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.chung-chi-1,
+.chung-chi-2 {
+  border-bottom: 1.5px solid #d6c08d;
+}
+:root {
+  --primary-color: #199cbd;
+  --secondary-color: #f36c1e;
+  --text-color: #333;
+  --light-bg: #f7f7f7;
+}
+/* PHAN CUOI */
+
+.phan-ket ul {
+  display: flex;
+  background-color: #f7f7f7;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  padding: 20px;
+  font-size: 20px;
+  
+}
+.phan-ket li {
+  /* color: blue; */
+}
+
+.hide {
+  display: none !important;
+}
+
+/* View more / collapsible styles */
+.header-with-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header-with-btn h1 {
+  margin: 0;
+}
+.header-with-btn .view-btn {
+  margin-left: auto;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.header-with-btn .view-btn:hover {
+  opacity: 0.95;
+}
+.collapsible-body {
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+  overflow: hidden;
+}
+.collapsible-body.hide {
+  max-height: 0 !important;
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.collapsible-body:not(.hide) {
+  max-height: 2000px; /* large enough for content */
+  opacity: 1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.skill-item {
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.3s;
+}
+.skill-item:hover {
+  box-shadow: 0 0 8px #aaa;
+}
+.skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.view-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.skill-item:hover .view-btn {
+  display: inline-block;
+}
+.skill-detail.hide {
+  display: none;
+}
+.skill-detail {
+  margin-top: 1rem;
+}

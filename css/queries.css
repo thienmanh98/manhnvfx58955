@@ -1,0 +1,164 @@
+/* Laptop (>=1025px) */
+@media (min-width: 1025px) {
+  /* Ví dụ: tăng kích thước chữ, hiển thị nhiều cột hơn */
+  html {
+    font-size: 62.5%;
+  }
+  #about .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  #job-info .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* iPad (portrait and landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  html {
+    font-size: 58%;
+  }
+  /* make containers more fluid but constrained for iPad */
+  #about .container {
+    grid-template-columns: 1fr;
+    padding-left: 2rem;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  #nav-bar .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    flex-wrap: nowrap;
+  }
+  .start {
+    padding-right: 0;
+  }
+  #target {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #personal-info {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+    border-left: none;
+  }
+  .submit-email {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: wheat;
+  }
+  #job-info .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .avatar {
+    position: static;
+    display: block;
+    margin: 0;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+  .border-1 {
+    margin: 1rem auto;
+    width: 92%;
+    max-width: 720px;
+  }
+  .grid {
+    display: block;
+  }
+}
+
+/* Mobile (<= 767px) */
+@media (max-width: 48rem) {
+  html {
+    font-size: 50%;
+  }
+  #about .container,
+  #job-info .container,
+  .chung-chi-list,
+  .project-list {
+    grid-template-columns: 1fr !important;
+    display: block !important;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #about .container {
+    padding-left: 0;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #personal-info {
+    padding-left: 0;
+    border-left: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #target, #personal-info {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  #nav-bar .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+  .start {
+    padding-right: 0;
+  }
+  .submit-email {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .avatar {
+    display: none !important;
+  }
+  .border-1 {
+    margin: 1rem auto;
+    width: 98%;
+  }
+  .du-an-border {
+    min-width: unset;
+    margin-bottom: 2rem;
+  }
+  .phan-ket ul {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.6rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    border-radius: 0.2rem;
+  }
+}

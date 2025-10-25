@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <p id="alert"></p>
+    <button>Submit</button>
+    <script>
+        let sub = document.getElementById("sub");
+        sub.addEventListener("click", myFunction);
+        function myFunction() {
+            let name = document.getElementById("input");
+            let alert = document.getElementById("alert");
+            if(name.value.length == 0 ) {
+                alert.interHTML = "xin hãy nhập vào giá trị";
+                alert.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
