@@ -1,6 +1,5 @@
 /* Laptop (>=1025px) */
 @media (min-width: 1025px) {
-  /* Ví dụ: tăng kích thước chữ, hiển thị nhiều cột hơn */
   html {
     font-size: 62.5%;
   }
@@ -12,7 +11,7 @@
   }
 }
 
-/* iPad (portrait and landscape) */
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   html {
     font-size: 58%;
@@ -86,6 +85,28 @@
   .grid {
     display: block;
   }
+  .header-with-btn {
+    display: flex !important;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header-with-btn h1 {
+    margin: 0;
+    flex: 1;
+  }
+  
+  .header-with-btn i {
+    font-size: 2.4rem;
+    margin-right: 1rem;
+  }
+  
+  .header-with-btn .view-btn {
+    margin-left: auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.4rem;
+  }
 }
 
 /* Mobile (<= 767px) */
@@ -147,6 +168,32 @@
     margin: 1rem auto;
     width: 98%;
   }
+
+  .header-with-btn {
+    display: flex !important;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  .header-with-btn h1 {
+    margin: 0;
+    flex: 1;
+    font-size: 1.8rem;
+  }
+  
+  .header-with-btn i {
+    font-size: 2rem;
+    margin-right: 0.8rem;
+  }
+  
+  .header-with-btn .view-btn {
+    margin-left: auto;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+  }
+
   .du-an-border {
     min-width: unset;
     margin-bottom: 2rem;

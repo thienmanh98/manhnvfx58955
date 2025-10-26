@@ -459,6 +459,7 @@ ul {
   border: none;
   cursor: pointer;
 }
+
 .skill-item:hover .view-btn {
   display: inline-block;
 }
