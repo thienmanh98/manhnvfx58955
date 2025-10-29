@@ -1,0 +1,16 @@
+/* Laptop (>=1025px) */
+@media (min-width: 1025px) {
+  html {
+    font-size: 62.5%;
+  }
+  #about .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  #job-info .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .ttcn {
+    font-size: 2rem;
+    color: black;
+  }
+}

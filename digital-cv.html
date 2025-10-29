@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Charter</title>
+    <!-- Bootstrap 5.0 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #199cbd;
+            --secondary-color: #f36c1e;
+            --border-color: #dee2e6;
+        }
+        .project-section {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            height: 100%;
+        }
+        .project-section h2 {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px 8px 0 0;
+            font-size: 1.25rem;
+            margin: 0;
+        }
+        .project-content {
+            padding: 1.5rem;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 1.5rem;
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary-color);
+        }
+        .timeline-item::after {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 20px;
+            width: 2px;
+            height: calc(100% + 10px);
+            background: var(--border-color);
+        }
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .project-section {
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-center mb-5">Project Charter</h1>
+        
+        <!-- Goals & Scopes -->
+        <div class="row mb-4">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="project-section">
+                    <h2><i class="fas fa-bullseye me-2"></i>Goals</h2>
+                    <div class="project-content">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-3">
+                                <i class="fas fa-check text-success me-2"></i>
+                                Xây dựng CV trực tuyến để giới thiệu bản thân
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check text-success me-2"></i>
+                                Tạo giao diện responsive trên mọi thiết bị
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check text-success me-2"></i>
+                                Tối ưu trải nghiệm người dùng với tính năng ẩn/hiện thông tin
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project-section">
+                    <h2><i class="fas fa-tasks me-2"></i>Scopes</h2>
+                    <div class="project-content">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <h5>IN</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">Developer</li>
+                                    <li class="mb-2">Project Manager</li>
+                                    <li>Reviewer</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5>OUT</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">Khách truy cập</li>
+                                    <li>Nhà tuyển dụng</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team & Primary -->
+        <div class="row mb-4">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="project-section">
+                    <h2><i class="fas fa-users me-2"></i>Team</h2>
+                    <div class="project-content">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-3">
+                                <i class="fas fa-user me-2"></i>
+                                Developer: Nguyễn Văn Mạnh
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-user-tie me-2"></i>
+                                Project Manager: Mentor FUNIX
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project-section">
+                    <h2><i class="fas fa-hourglass-half me-2"></i>Primary</h2>
+                    <div class="project-content">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-3">
+                                <i class="fas fa-question-circle me-2"></i>
+                                Xác thực email trước khi hiển thị thông tin
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-question-circle me-2"></i>
+                                Thiết kế responsive cho tablet và mobile
+                            </li>
+                            <li>
+                                <i class="fas fa-question-circle me-2"></i>
+                                Tối ưu hiệu năng và trải nghiệm người dùng
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="row">
+            <div class="col-12">
+                <div class="project-section">
+                    <h2><i class="fas fa-clock me-2"></i>Timeline</h2>
+                    <div class="project-content">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <strong>01/10/2023</strong>: Bắt đầu dự án
+                            </div>
+                            <div class="timeline-item">
+                                <strong>05/10/2023</strong>: Thiết kế giao diện desktop
+                            </div>
+                            <div class="timeline-item">
+                                <strong>10/10/2023</strong>: Phát triển tính năng xác thực email
+                            </div>
+                            <div class="timeline-item">
+                                <strong>15/10/2023</strong>: Tối ưu responsive tablet & mobile
+                            </div>
+                            <div class="timeline-item">
+                                <strong>20/10/2023</strong>: Review và chỉnh sửa
+                            </div>
+                            <div class="timeline-item">
+                                <strong>25/10/2023</strong>: Hoàn thành và bàn giao
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5.0 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

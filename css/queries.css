@@ -1,4 +1,4 @@
-/* Laptop (>=1025px) */
+/* Laptop (>=1025px)
 @media (min-width: 1025px) {
   html {
     font-size: 62.5%;
@@ -8,6 +8,11 @@
   }
   #job-info .container {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .avatar {
+    width: 180px;
+    height: 195px;
+    top: -100px;
   }
 }
 

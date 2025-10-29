@@ -34,6 +34,7 @@ img[loading: "lazy"] {
   position: absolute;
   top: -120px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
 }
 
 #banner {
@@ -431,7 +432,7 @@ ul {
   padding-bottom: 0;
 }
 .collapsible-body:not(.hide) {
-  max-height: 2000px; /* large enough for content */
+  max-height: 2000px;  
   opacity: 1;
   padding-top: 1rem;
   padding-bottom: 1rem;

@@ -7,7 +7,7 @@ Dự án xây dựng CV Online với các chức năng:
 
 ## Link truy cập
 
-🔗 [Xem trên GitHub Pages](https://thienmanh98.github.io)
+🔗 [Xem trên GitHub Pages](https://github.com/thienmanh98)
 
 ## Repository
 

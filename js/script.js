@@ -1,6 +1,6 @@
 "use script";
 
-// GSAP timeline với ScrollTrigger (nếu bạn dùng GSAP và ScrollTrigger)
+// GSAP timeline với ScrollTrigger và snap to labels
 if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
     let tl = gsap.timeline({
         scrollTrigger: {
@@ -50,7 +50,7 @@ if (btnSubmit) {
     });
 }
 
-// Ẩn/hiện thông tin cá nhân khi nhập đúng email (nếu bạn dùng các nút view-more/view-less)
+// Ẩn/hiện thông tin cá nhân khi nhập đúng email 
 function view_more(element) {
     const viewBtn = element.querySelector(".job-infor .view-button");
     if (viewBtn) viewBtn.style.visibility = "visible";

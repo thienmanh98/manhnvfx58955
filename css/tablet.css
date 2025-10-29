@@ -1,0 +1,100 @@
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  html {
+    font-size: 58%;
+  }
+  /* make containers more fluid but constrained for iPad */
+  #about .container {
+    grid-template-columns: 1fr;
+    padding-left: 2rem;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  #nav-bar .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    flex-wrap: nowrap;
+  }
+  .start {
+    padding-right: 0;
+  }
+  #target {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #personal-info {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+    border-left: none;
+  }
+  .submit-email {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: wheat;
+  }
+  #job-info .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .avatar {
+    position: static;
+    display: block;
+    margin: 0;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+  .border-1 {
+    margin: 1rem auto;
+    width: 92%;
+    max-width: 720px;
+  }
+  .grid {
+    display: block;
+  }
+  .header-with-btn {
+    display: flex !important;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header-with-btn h1 {
+    margin: 0;
+    flex: 1;
+  }
+  
+  .header-with-btn i {
+    font-size: 2.4rem;
+    margin-right: 1rem;
+  }
+  
+  .header-with-btn .view-btn {
+    margin-left: auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.4rem;
+  }
+  .ttcn {
+    font-size: 2rem;
+    color: black;
+  }
+}

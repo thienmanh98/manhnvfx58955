@@ -1,0 +1,100 @@
+/* Mobile (<= 767px) */
+@media (max-width: 48rem) {
+  html {
+    font-size: 50%;
+  }
+  #about .container,
+  #job-info .container,
+  .chung-chi-list,
+  .project-list {
+    grid-template-columns: 1fr !important;
+    display: block !important;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #about .container {
+    padding-left: 0;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #personal-info {
+    padding-left: 0;
+    border-left: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #target, #personal-info {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  #nav-bar .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+  .start {
+    padding-right: 0;
+  }
+  .submit-email {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .avatar {
+    display: none !important;
+  }
+  .border-1 {
+    margin: 1rem auto;
+    width: 98%;
+  }
+
+  .header-with-btn {
+    display: flex !important;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  .header-with-btn h1 {
+    margin: 0;
+    flex: 1;
+    font-size: 1.8rem;
+  }
+  
+  .header-with-btn i {
+    font-size: 2rem;
+    margin-right: 0.8rem;
+  }
+  
+  .header-with-btn .view-btn {
+    margin-left: auto;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .du-an-border {
+    min-width: unset;
+    margin-bottom: 2rem;
+  }
+  .phan-ket ul {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.6rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    border-radius: 0.2rem;
+  }
+}
